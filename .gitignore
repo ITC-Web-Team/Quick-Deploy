@@ -2,6 +2,11 @@
 node_modules/
 yarn.lock
 
+# Allow package-lock.json for production deployment
+!package-lock.json
+!backend/package-lock.json
+!frontend/package-lock.json
+
 # Environment variables
 .env
 .env.local
