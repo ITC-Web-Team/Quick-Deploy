@@ -6,7 +6,7 @@ const SiteCard = ({ site, onDelete, onView }) => {
   const [downloading, setDownloading] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(`http://localhost:3000/${site.name}/`);
+    navigator.clipboard.writeText(`https://quickdeploy.tech-iitb.org/${site.name}/`);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

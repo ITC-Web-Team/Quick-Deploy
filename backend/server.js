@@ -280,7 +280,7 @@ app.post('/api/deploy', upload.any(), async (req, res) => {
         site: {
           name: siteName,
           url: `/${siteName}`,
-          accessUrl: `http://localhost:${PORT}/${siteName}`,
+          accessUrl: `https://quickdeploy.tech-iitb.org/${siteName}`,
           createdAt: metadata.createdAt,
         },
       });

@@ -41,7 +41,7 @@ const SitesList = ({ refreshTrigger, onRefreshComplete }) => {
   };
 
   const handleView = (siteName) => {
-    window.open(`http://localhost:3000/${siteName}/`, '_blank');
+    window.open(`https://quickdeploy.tech-iitb.org/${siteName}/`, '_blank');
   };
 
   const filteredSites = sites.filter((site) =>
