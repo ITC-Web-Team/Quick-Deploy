@@ -61,7 +61,7 @@ const DeployForm = ({ onSuccess }) => {
     setLoading(true);
     try {
       const response = await deploySite(formData);
-      setMessage(`✓ Live at: https://quickdeploy.tech-iitb.org/${siteName}/`);
+      setMessage(`✓ Live at: https://api.quickdeploy.tech-iitb.org/${siteName}/`);
       setMessageType('success');
       setSiteName('');
       setHtmlFile(null);
@@ -112,7 +112,7 @@ const DeployForm = ({ onSuccess }) => {
           />
           {siteName && (
             <p className="text-xs text-amber-600 mt-2 bg-amber-100 rounded-lg px-2 py-1 inline-block">
-              🔗 https://quickdeploy.tech-iitb.org/{siteName}/
+              🔗 https://api.quickdeploy.tech-iitb.org/{siteName}/
             </p>
           )}
         </div>
